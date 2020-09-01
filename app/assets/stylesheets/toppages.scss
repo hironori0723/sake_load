@@ -1,0 +1,77 @@
+// Place all the styles related to the toppages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+$cWhite: white;
+$cBlack: black;
+
+@import "mobile";
+
+@media screen and (min-width: 601px) {
+}
+
+html {
+  color: $cBlack;
+  background-color: $cWhite;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  font-size: 16px;
+  font-family: "Noto Sans JP", sans-serif;
+  background: #f7f7f7;
+  margin: 0;
+}
+
+.header {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  background: $cWhite;
+  border-bottom: 1px solid #eae6dc;
+  &__heading {
+    padding: 6px 0 6px 15px;
+    font-size: 18px;
+    background: #eae6dc;
+    &__line {
+      width: 600px;
+      margin: 0 auto;
+    }
+  }
+  &__contents {
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    margin: 0 auto;
+  }
+  &__logo {
+    font-size: 30px;
+    margin: 20px 20px;
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+    &__item {
+      margin-left: 32px;
+    }
+  }
+  a {
+    color: #333333;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+.fa {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
