@@ -1,3 +1,39 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+$cBlack: #000;
+$cWhite: #fff;
+
+@import "mobile";
+
+html {
+  color: $cBlack;
+  background-color: $cWhite;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  font-size: 16px;
+  font-family: "Noto Sans JP", sans-serif;
+  background: #f7f7f7;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    color: orangered;
+  }
+}
+
+.btn {
+  box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.5);
+  transform: translate(-2.5px, -2.5px);
+  border-radius: 5px;
+  &:hover {
+    transform: translate(2px, 2px);
+    box-shadow: none;
+  }
+}

@@ -4,3 +4,4 @@
 <%= render 'form', user: @user%>
 
 <%= link_to "一覧に戻る", users_path %>
+<%= link_to "削除", user_path(@user), method: :DELETE, data: { confirm: "削除してよろしいですか？" } %>
